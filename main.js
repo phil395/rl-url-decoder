@@ -9,7 +9,11 @@ const deleteExtraParams = (url) => {
 }
 
 const writeToClipboard = (text) => {
-  navigator.clipboard?.write(text).catch(console.log)
+  navigator.clipboard?.writeText(text)
+    .then(() => {
+      alert("Результат записан в clipboard")
+    })
+    .catch(console.log)
 }
 
 const writeToOutput = (text, className) => {
