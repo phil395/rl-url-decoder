@@ -1,0 +1,31 @@
+.container {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.url-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.url-form textarea {
+  resize: vertical;
+}
+
+.url-form button {
+  margin: 1rem 0;
+  padding: .35rem 0;
+  font-size: 1rem;
+}
+
+.url-form output {
+  font-weight: 700;
+}
+
+.error {
+  color: brown;
+}
+
+.success {
+  color: darkgreen;
+}
